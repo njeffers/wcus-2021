@@ -5,5 +5,10 @@
 	"forwardPorts": [ 8080 ],
 	"workspaceFolder": "/var/www/html/",
 	"postCreateCommand": "/var/www/html/wp-content/themes/${localWorkspaceFolderBasename}/.devcontainer/setup.sh",
-	"remoteUser": "www-data"
+	"remoteUser": "www-data",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"version": "latest"
+		}
+	}
 }
